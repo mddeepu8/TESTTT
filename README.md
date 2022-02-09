@@ -1,6 +1,4 @@
 # TESTTT
-# csp-tech-radar
-The Content Supply Platforms department technology radar.
 
 ## Visualisation
 The current Tech Radar can be viewed [here](https://radar.thoughtworks.com/?sheetId=https%3A%2F%2Fraw.githubusercontent.com%2Fsky-uk%2Fcsp-tech-radar%2Fmaster%2Fcsp-tech-radar.csv) using the web application provided by ThoughtWorks.
