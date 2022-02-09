@@ -14,41 +14,12 @@
 </head>
 <body>
 
-<div style="text-align:center">
-  <h1>Technology Radar<h1>
-  <span class="dot"></span>
 
-    create_chart({
-      svg_id: "radar",
-      colors: {
-        grid: "#ddd"
-      },
-      quadrants: quadrants,
+    </style>
+  </head>
+  <body>
+    <div class="circle"> quadrants: quadrants,
       rings: rings,
-      entries: blips,
-    });
-  </script>
-
-  <div class="legend">
-    <ul class="inline-list">
-      <li class="moved">
-        <svg width="16" height="16">
-          <path d="M 0,16 16,16 8,0 z" class="shape"></path>
-        </svg>
-        Moved up
-      </li>
-      <li class="moved">
-        <svg width="16" height="16">
-          <path d="M 0,0 16,0 8,16 z" class="shape"></path>
-        </svg>
-        Moved down
-      </li>
-      <li>
-        <svg width="16" height="16">
-          <circle r="8" cx="8" cy="8" class="shape"></circle>
-        </svg>
-        Not moved
-      </li>
-    </ul>
-  </div>
-</section>
+      entries: blips</div>
+  </body>
+</html>
