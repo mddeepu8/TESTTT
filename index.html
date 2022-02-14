@@ -91,31 +91,41 @@ body {
 </head>
 <body>
 <script>  
-function toEntry(row) {
-    return {
-        label: row.name,
-        quadrant: ['Bottom Right', 'Bottom Left', 'Top Left', 'Top Right'].indexOf(row.quadrant),
-        ring: ['INNER', 'SECOND', 'THIRD', 'OUTER'].indexOf(row.ring),
-        link: row.link,
-        moved: ['down', 'none', 'up'].indexOf(row.moved) - 1,
-        active: true
+{
+  "title": "My Radar",
+  "quadrants": ["Quad1", "Quad2", "Quad3", "Quad4"],
+  "rings": ["adopt", "trial", "assess", "hold"],
+  "blips": [
+    {
+      "name": "JavaScript",
+      "quadrant": "Quad1",
+      "ring": "adopt",
+      "isNew": false,
+      "description": "<p>This is a description</p><p>Formatted into paragraphs</p>"
+    },
+    {
+      "name": "Go",
+      "quadrant": "Quad2",
+      "ring": "trial",
+      "isNew": true,
+      "description": "This is a simple description"
+    },
+    {
+      "name": "Java",
+      "quadrant": "Quad3",
+      "ring": "assess",
+      "isNew": false,
+      "description": "This is a <a href=\"/\">description</a><br /><br />Spanning several lines."
+    },
+    {
+      "name": "C++",
+      "quadrant": "Quad4",
+      "ring": "hold",
+      "isNew": false,
+      "description": "This is another simple description"
     }
-}
-function draw_radar(my_entries) {
-    radar_visualization({
-        entries: my_entries
-    });
-}
-fetch('C:\Users\320163895\OneDrive - Philips.new1.csv')
-    .then(function (resp) {
-        return resp.text();
-    })
-    .then(function (csv) {
-        var entries = new1.csvParse(csv, function (row) {
-            return toEntry(row);
-        });
-        draw_radar(entries);
-    });  
+  ]
+}  
   </script>
   <div style="text-align:center">
     <span class="dot"></span>
