@@ -18,7 +18,7 @@ fetch('C:\Users\320163895\OneDrive - Philips.new1.csv')
         return resp.text();
     })
     .then(function (csv) {
-        var entries = d3.csvParse(csv, function (row) {
+        var entries = new1.csvParse(csv, function (row) {
             return toEntry(row);
         });
         draw_radar(entries);
